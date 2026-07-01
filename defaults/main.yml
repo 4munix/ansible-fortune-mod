@@ -15,6 +15,14 @@ packages_redhat:
   - perl-Test-Differences
   - perl-Path-Tiny
   - perl-Test-Valgrind
+packages_debian:
+  - make
+  - g++
+  - librecode0
+  - librecode-dev
+  - cmake
+  - libcmocka0
+  - libcmocka-dev
 
 dest_dir: "~/fortune-mod"
 release: "fortune-mod-3.24.0"
