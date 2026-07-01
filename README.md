@@ -13,8 +13,8 @@ Role Variables (defaults)
 
 | variable | value | description |
 | --- | --- | --- |
-| `packages_redhat` | see *defaults/main.yml* | packages needed for Red Hat |
-| `dest_dir` | `~/fortune-mod` | Destination directory |
+| `packages_redhat` | see *defaults/main.yml* | Packages needed for Red Hat |
+| `dest_dir` | `~/fortune-mod` | Destination directory (will be created) |
 | `release` | `fortune-mod-3.24.0` | Which release to use |
 | `file_extension` | `.tar.xz` | |
 | `build_dir` | `{{ dest_dir }}/{{ release }}/build` | Build directory will be created |
