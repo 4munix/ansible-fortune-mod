@@ -9,7 +9,6 @@ packages_redhat:
   - cmake
   - libcmocka
   - libcmocka-devel
-  # - perl-App-cpanminus
   - perl-autodie
   - perl-File-Find-Object
   - perl-Test-Differences
