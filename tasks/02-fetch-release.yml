@@ -1,0 +1,20 @@
+#SPDX-License-Identifier: MIT-0
+---
+# 02-fetch-repo file for fortune-mod
+
+- name: Create destination directory {{ dest_dir }}
+  ansible.builtin.file:
+    path: "{{ dest_dir }}"
+    state: directory
+
+- name: Fetch release {{ release }}
+  ansible.builtin.get_url:
+    url: "{{ download_url }}"
+    dest: "{{ dest_dir }}"
+
+- name: Unpack
+  ansible.builtin.shell: >
+    tar xf {{ release }}{{ file_extension }} &&
+    rm {{ release }}{{ file_extension }}
+  args:
+    chdir: "{{ dest_dir }}"

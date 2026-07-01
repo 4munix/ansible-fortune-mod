@@ -1,0 +1,16 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for fortune-mod
+
+- name: Set fact - OS info
+  set_fact:
+    os_family: "{{ ansible_facts['os_family'] }}"
+
+- name: Install packages
+  ansible.builtin.include_tasks: "01-packages-{{ os_family }}.yml"
+
+- name: Fetch tar.xz
+  ansible.builtin.include_tasks: "02-fetch-release.yml"
+
+- name: Build and install
+  ansible.builtin.include_tasks: "03-build.yml"

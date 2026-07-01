@@ -1,0 +1,22 @@
+#SPDX-License-Identifier: MIT-0
+---
+# defaults file for fortune-mod
+
+packages_redhat:
+  - recode
+  - recode-devel
+  - cmake
+  - libcmocka
+  - libcmocka-devel
+  # - perl-App-cpanminus
+  - perl-autodie
+  - perl-File-Find-Object
+  - perl-Test-Differences
+  - perl-Path-Tiny
+  - perl-Test-Valgrind
+
+dest_dir: "~/fortune-mod"
+release: "fortune-mod-3.24.0"
+file_extension: ".tar.xz"
+build_dir: "{{ dest_dir }}/{{ release }}/build"
+download_url: "https://github.com/shlomif/fortune-mod/releases/tag/{{ release }}/{{ release }}{{file_extension}}"

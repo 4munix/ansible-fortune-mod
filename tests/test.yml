@@ -1,0 +1,6 @@
+#SPDX-License-Identifier: MIT-0
+---
+- hosts: "{{ myhost }}"
+  remote_user: root
+  roles:
+    - fortune-mod
