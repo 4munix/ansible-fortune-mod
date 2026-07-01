@@ -3,6 +3,7 @@
 # defaults file for fortune-mod
 
 packages_redhat:
+  - gcc-c++
   - recode
   - recode-devel
   - cmake
