@@ -10,10 +10,11 @@ packages_redhat:
   - libcmocka
   - libcmocka-devel
   - perl-autodie
-  - perl-File-Find-Object
-  - perl-Test-Differences
-  - perl-Path-Tiny
-  - perl-Test-Valgrind
+  # optional for testing
+  # - perl-File-Find-Object
+  # - perl-Test-Differences
+  # - perl-Path-Tiny
+  # - perl-Test-Valgrind
 packages_debian:
   - make
   - g++
