@@ -16,6 +16,7 @@ Role Variables (defaults)
 | variable | value | description |
 | --- | --- | --- |
 | `packages_redhat` | see *defaults/main.yml* | Packages needed for Red Hat |
+| `packages_debian` | see *defaults/main.yml* | Packages needed for Debian / Ubuntu|
 | `dest_dir` | `~/fortune-mod` | Destination directory (will be created) |
 | `release` | `fortune-mod-3.24.0` | Which release to use |
 | `file_extension` | `.tar.xz` | |
